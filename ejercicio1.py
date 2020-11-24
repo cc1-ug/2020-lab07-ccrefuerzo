@@ -2,12 +2,18 @@ import random
 import math
 
 def mfc(x,y):
+  if y == 0:
+    return x
+  else:
+    return mfc(y, (x% y))
+
 #***************************
 # ESCRIBA SU SOLUCION AQUI
 
 #***************************
 
 def primosRelativos(a,b):
+  return mfc(a, b) == 1
 #***************************
 # ESCRIBA SU SOLUCION AQUI
 
